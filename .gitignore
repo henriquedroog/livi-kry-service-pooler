@@ -6,3 +6,4 @@ gradle
 .vertx
 /build/
 /.vertx/
+/poller.db
