@@ -33,7 +33,6 @@ public class BackgroundPoller {
         }
       });
     });
-    //TODO
     return Future.succeededFuture();
   }
 }
