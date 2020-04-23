@@ -42,3 +42,24 @@ You can also run gradle directly from the command line:
 ```
 ./gradlew clean run
 ```
+
+# What has been done
+- Whenever the server is restarted, any added services disappear
+    - DB introduced so services are persisted on DB also so they are available on next start
+- There's no way to delete individual services
+    - Services are deletable
+- We want to be able to name services and remember when they were added
+    - It is possible to informa a name and the creation time is stored as well in the DB
+- The HTTP poller is not implemented
+    - BackgroudPooler was implemented
+    
+- Non critical
+    - So refactor done. Introduced some constants for DB queries, and Request Json parameters 
+    - Enum for Pooler request status
+    - Started trying to get the frontend a little better
+    
+- Would be good to be done
+    - More tests, to improve test coverage
+    - Introduce validations
+    - Try to separate DB stuffs in a separate verticle
+    - Make frontend prettier, maybe introduce react.
