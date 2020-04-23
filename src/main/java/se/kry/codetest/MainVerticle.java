@@ -109,17 +109,16 @@ public class MainVerticle extends AbstractVerticle {
   }
 
   private void createService(RoutingContext context) {
-      LOGGER.info("Creating Services");
     JsonObject jsonBody = context.getBodyAsJson();
-      LOGGER.info("Creating Services" + jsonBody);
+
     JsonArray parameters = new JsonArray()
             .add(jsonBody.getString(URL))
             .add(jsonBody.getString(NAME));
-    LOGGER.info("Parameters" + parameters);
+
     connector.query(DBQueriesDefinition.INSERT_SERVICE, parameters)
             .setHandler(ar -> {
       if(ar.succeeded()) {
-        LOGGER.info("Body" + RequestStatus.UNKNOWN.name());
+
         services.put(jsonBody.getString(URL), RequestStatus.UNKNOWN.name());
         context.response()
                 .putHeader("content-type", "text/plain")
