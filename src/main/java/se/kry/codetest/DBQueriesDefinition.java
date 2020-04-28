@@ -1,7 +1,7 @@
 package se.kry.codetest;
 
 /**
- * @author cdroog, Prodyna AG
+ * @author Henrique Droog
  * @since 2020-04-23
  */
 public interface DBQueriesDefinition {

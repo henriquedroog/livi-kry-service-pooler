@@ -1,8 +1,6 @@
 *.class
 out/
 .idea/
-.gradle/
-gradle
 .vertx
 /build/
 /.vertx/
