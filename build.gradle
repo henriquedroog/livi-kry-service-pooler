@@ -5,7 +5,7 @@ plugins {
 }
 ext {
   vertxVersion = '3.6.3'
-  junitJupiterEngineVersion = '5.2.0'
+  junitJupiterEngineVersion = '5.8.1'
 }
 
 repositories {
