@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: daily
+    #      day: "tuesday"
+    #      time: "10:10"
+    #      timezone: "Europe/London"
+    #    reviewers:
+    #      - "@webbhalsa/care-uk"
+    target-branch: "master"
+    labels:
+      - "gradle dependencies test"
+    open-pull-requests-limit: 99
